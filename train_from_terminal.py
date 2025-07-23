@@ -107,7 +107,7 @@ if best_checkpoint_path:
 
 # Setup optimizer and scheduler
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=1e-4)
-scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5, verbose=True)
+scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
 
 # Mixed precision training
 scaler = torch.cuda.amp.GradScaler()
