@@ -20,6 +20,9 @@ from utils.train import train_one_epoch, evaluate, weighted_mse_loss, focal_mse_
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+# Create checkpoint directory if it doesn't exist
+os.makedirs("ckpt", exist_ok=True)
+
 def collect_gpu_garbage():
     torch.cuda.empty_cache()
     torch.cuda.ipc_collect()
