@@ -145,3 +145,13 @@ Thumbs.db
 !README.md
 !requirements.txt
 !setup.py
+
+# Ignore symbolic links to data
+data
+
+# Test results and temporary files
+test_results_*.csv
+test_metrics/model_comparison/
+*.csv
+!model_comparison_results.csv
+!test_set_10000.json
