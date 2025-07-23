@@ -1,7 +1,5 @@
 # Data files (too large for git)
-data/images/
-data/labels.csv
-data/labels - Copy.csv
+data/
 
 # Model checkpoints and training progress (very large files)
 ckpt/
@@ -138,8 +136,6 @@ Thumbs.db
 *.gif
 *.bmp
 *.tiff
-*.csv
-*.json
 
 # Keep only essential files
 !test_set_10000.json
